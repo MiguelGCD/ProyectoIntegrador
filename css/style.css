@@ -1,0 +1,420 @@
+body{
+   margin:0;
+   padding:0;
+}
+
+
+/*--- HEADER-----*/
+
+
+header{
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   width: 100%;
+   height: 60px;
+   z-index:99999;
+}
+
+h1 {
+   font-family: 'Open Sans Condensed', sans-serif;
+   text-transform: uppercase;
+   font-size:35px;
+   color: rgb(0, 0, 0);
+   position:absolute;
+   top:0;
+   margin: 6px 0 0 6px; 
+}
+
+#logo{
+    
+}
+
+nav ol li{
+   display:inline-block;
+   padding: 0 15px 0 15px;
+}
+
+nav ol{
+   margin: 15px 0px 0 0;
+   text-align:center;
+}
+
+li{
+   font-family: 'Barlow Condensed', sans-serif;
+   font-size: 20px; 
+   color:white;
+}
+
+a.menu{
+   color:black;
+}
+
+
+/*--- HOME-----*/
+
+
+#Home{
+   
+}
+
+.slide{
+   overflow: hidden;
+   width:100%;
+}
+
+.slide ul{
+   padding:0;
+   margin:0;
+   width:4200px;
+   animation-name: slide;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+}
+
+.slide ul li{
+   width:1400px;
+   float:left;
+}
+
+#imagen1{
+   background-image: url("../img/imagenfondo.jpg");
+   opacity:0.9;
+   /*background-position-y: 20%;*/
+   background-repeat: no-repeat;
+   background-size: cover; /*El ancho de imagen ocupa el ancho de pantalla*/
+   /*background-attachment: fixed; Fija la imagen dentro del contenedor*/
+   height: 660px; /*Permite ver la imagen referencia por el url*/
+}
+
+#imagen2{
+   background-image: url("../img/concert.jpg");
+   opacity:0.9;
+   /*background-position-y: 20%;*/
+   background-repeat: no-repeat;
+   background-size: cover; /*El ancho de imagen ocupa el ancho de pantalla*/
+   /*background-attachment: fixed; Fija la imagen dentro del contenedor*/
+   height: 660px; /*Permite ver la imagen referencia por el url*/
+}
+
+#imagen3{
+   background-image: url("../img/maxresdefault.jpg");
+   opacity:0.9;
+   /*background-position-y: 20%;*/
+   background-repeat: no-repeat;
+   background-size: cover; /*El ancho de imagen ocupa el ancho de pantalla*/
+   /*background-attachment: fixed; Fija la imagen dentro del contenedor*/
+   height: 660px; /*Permite ver la imagen referencia por el url*/
+}
+
+@keyframes slide{
+   0%{ 
+     
+   }
+   30%{
+      margin-left:-1400px;
+   }
+   33%{
+      
+   }
+   66%{
+      margin-left:-2800px;
+   }
+   100%{
+      
+   }
+}
+
+table{
+   margin:auto;
+}
+
+a{
+   text-decoration-line: none;
+   color: black;
+   list-style-type: none;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size:18px;
+}
+
+p{
+   text-align: justify;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-size: 22px; 
+}
+
+ul{
+   padding: none;
+   margin: none;
+   list-style:none;
+}
+
+h2 {
+   font-family: 'Open Sans Condensed', sans-serif;
+   text-transform: uppercase;
+   font-size:28px;
+   color: rgb(197, 197, 197);
+}
+
+h3 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 22px;
+}
+
+h4 {
+   font-family: 'Barlow Condensed', sans-serif; 
+}
+
+form {
+   font-family: 'Barlow Condensed', sans-serif;
+   font-size: 22px; 
+}
+
+
+/*--- INTEGRANTES---*/
+
+
+#Integrantes{
+   /*width:100%;*/
+   /*margin-top:100px;*/
+
+}
+
+#banda{
+   background:url("../img/Metallica-HD-Wallpaper-01.jpg");
+   height: 600px;
+   background-size: cover;
+   background-position-y: 40%;
+   background-attachment: fixed;
+   /*filter: opacity(0.2);*/  
+}
+
+.titular{
+   text-align:center;
+   background-color: rgb(39, 39, 39);
+   width:100%;
+   height:150px;
+   line-height: 150px;
+}
+
+.titular h2 {
+   margin:0;
+}
+
+/*--- .fotocircular{
+   border-bottom-left-radius: 130px;
+   border-bottom-right-radius: 130px;
+   border-top-left-radius: 130px;
+   border-top-right-radius: 130px;
+   min-width:130px;
+}
+
+td h3{
+   margin-left: 10%;
+}
+td p{
+   margin-left: 10%;
+}
+
+.fotocircular{
+   text-align: center;
+} --*/
+
+
+
+#miembros{
+   list-style:none;
+   padding:0;
+   margin-top:115px;
+   width:100%;
+   text-align:center;
+}
+
+#miembros li{
+   width:200px;
+   height:200px;
+   display:inline-block;
+   position:relative;
+   border-radius: 120px;
+   overflow: hidden;/*Oculta exedente de contenido*/     
+   text-align: center;
+   margin: 0 25px 0 25px;
+}
+
+#miembros li .integrante{
+   width:100%;
+}
+
+#miembros li .titulo{
+   width:100%;
+   height:100%;
+   position:absolute;
+   top:0;
+   background: rgba(0, 0, 0, 0.671);
+   display: none;
+   padding-top:50px;
+}
+
+#miembros li .titulo p,#miembros li .titulo h4{
+   margin:0;
+   padding:0;
+}
+
+#miembros li .titulo h4{
+   margin-top:30px;
+   color: #ffffff;
+   text-align: center;
+}
+
+#miembros li .titulo p{
+   text-align: center;
+   color: #ffffff;
+}
+
+
+#miembros li:hover .titulo{
+   display: block;
+}
+
+
+/*--- DISCOGRAFIA ---*/
+
+
+#Discografia{
+   margin:auto;
+}
+
+#Cds{
+
+}
+
+.fila{
+   margin:0;
+   padding:0;
+   text-align: center;
+}
+
+.fila li{
+   display:inline-block;
+   margin:0 -2px -5px -2px;
+   padding:0;
+   overflow: hidden;
+   /*position:relative;*/
+}
+
+.fila li div{ 
+   filter: grayscale(100%) opacity(0.9);
+}
+
+.fila li img{
+   display:block;
+  /* overflow: hidden;*/
+}
+
+.filas{
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   
+}
+
+#disc1{
+   background:url("../img/master-of-puppets.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc2{
+   background:url("../img/and-justice-for-all.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc3{
+   background:url("../img/ride-the-lighting.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc4{
+   background:url("../img/Load.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc5{
+   background:url("../img/Deathmagnetic.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc6{
+   background:url("../img/garage-inc.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc7{
+   background:url("../img/BalckAlbum.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc8{
+   background:url("../img/Reload.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+#disc9{
+   background:url("../img/Stanger.jpg");
+   height: 300px;
+   width:300px;
+   background-size: 100%;
+   transition: all ease 0.5s;
+}
+
+
+.fila li:hover{
+   filter: grayscale(0%);
+   transform: rotate(360deg) ;
+}
+
+.fila li:hover div{
+   filter: grayscale(0%) opacity(1);
+   transform:rotate(360deg) scale(1.1);
+   /*z-index:999;*/
+}
+
+.fila .filas h3{
+   margin:0;
+   padding:0;
+   line-height: 300px;
+   font-weight: 600;
+   font-size: 16pt;
+   transition:.3s;
+   filter: opacity(0);
+   color: rgb(255, 255, 255);
+   font-family: Helvetica, sans-serif;
+}
+
+.fila li:hover h3{
+   filter: opacity(1);
+}

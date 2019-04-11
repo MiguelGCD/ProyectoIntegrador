@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Metallica-Contrataciones</title>
+    <meta charset="utf-8" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans+Condensed:300,300i,700"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.jpg" width="120" id="logo"/>
+        <h1>Metallica</h1>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="discografia.html">Discografia</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="formularios.html">Contrataciones</a></li>
+        </ol>
+    </nav>
+    <section id="Formulario">
+        <h2>Contrataciones</h2>
+        <form>
+            <fieldset>
+                <legend>
+                    <h3>Por contrataciones llene los campos a continuación</h3>
+                </legend>
+                <label for="nombre"></label>
+                <input name="nombre" type="text" placeholder="Nombre y Apellido" required /><br />
+                <label for="telefono"></label><br />
+                <input name="telefono" type="text" placeholder="Teléfono" required /><br />
+                <label for="correo"></label><br />
+                <input name="correo" type="text" placeholder="correo" required /><br /><br />
+                <label for="seleccione">Seleccione su continente de origen</label><br />
+                <select><br />
+                    <option value="Sudamerica">Sudamerica</option>
+                    <option value="Centroamerica">Centroamerica</option>
+                    <option value="Norteamerica">Norteamerica</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">África</option>
+                    <option value="Oceania">Oceanía</option>
+                </select><br /><br />
+                <label for="fan">Seleccione</label>
+                <div>Fan-asociado</div><input type="radio" name="fan" value="si" />
+                <div>Fan-no-asociado</div><input type="radio" name="fan" valur="no" /><br />
+                <textarea name="mensaje" cols="40" rows="15" placeholder="Déjenos su mensaje"></textarea><br />
+                <label for="tyc">Para continuar deberá aceptar <a href="tyc.html">témrinos y condiciones</a></label>
+                <input name="tyc" type="checkbox" value="acepto" /><br /><br />
+                <input name="enviar" type="submit" value="Enviar" />
+                <input name="resetear" type="reset" value="Limpiar campos" /><br />
+                <input type="hidden" name="id" value="1" /><br />
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>©Copyright 1980-2019 Metallica</p>
+        <a href="#logo"><img src="img/Logo.jpg" width="40" /></a>
+    </footer>
+</body>
+
+</html>
